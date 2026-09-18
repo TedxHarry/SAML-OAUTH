@@ -2,10 +2,10 @@
 
 **ID:** SAML-001\
 **Depth:** Core\
-**Prerequisites:** [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md), [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md), FND-003 (Planned). The minimum necessary background is included here for the pilot.\
+**Prerequisites:** [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md), [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md), [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md).\
 **Outcome:** Explain how the browser carries a SAML login exchange, why the portal accepts the authentication result, and how the portal creates its own session.
 
-> **Draft for review.** This is the narrative-first pilot with the accepted bearer explanation and relocated cookie details. FND-002 is available in draft; FND-003 is not yet written.
+> **Draft for review.** This is the narrative-first pilot with the accepted bearer explanation and relocated cookie details. All Foundations prerequisites are available; FND-003 remains Draft pending its review.
 
 ## Maya opens the employee portal
 

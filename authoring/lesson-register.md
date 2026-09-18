@@ -1,11 +1,11 @@
 # Lesson register
 This authoring record reserves filenames, IDs, purpose, and explicit prerequisites. Reading order is maintained in the [table of contents](../TABLE-OF-CONTENTS.md). IDs never change when a lesson moves.
-64 entries: 56 Core, 6 Advanced engineering, 2 Specialist reference. FND-001 is Ready; FND-002 and SAML-001 are Draft; the remaining 61 entries are Planned.
+64 entries: 56 Core, 6 Advanced engineering, 2 Specialist reference. FND-001 and FND-002 are Ready; FND-003 and SAML-001 are Draft; the remaining 60 entries are Planned.
 | ID | Depth | Prerequisites | Status | Reserved path |
 |---|---|---|---|---|
 | FND-001 | Core | IT fundamentals | Ready | `part-foundations/FND-001-login-access-and-account-lifecycle.md` |
-| FND-002 | Core | FND-001 | Draft | `part-foundations/FND-002-following-the-browser-and-its-sessions.md` |
-| FND-003 | Core | FND-001, FND-002 | Planned | `part-foundations/FND-003-artifact-creators-and-consumers.md` |
+| FND-002 | Core | FND-001 | Ready | `part-foundations/FND-002-following-the-browser-and-its-sessions.md` |
+| FND-003 | Core | FND-001, FND-002 | Draft | `part-foundations/FND-003-artifact-creators-and-consumers.md` |
 | SAML-001 | Core | FND-001, FND-002, FND-003 | Draft | `part-saml/SAML-001-first-sp-initiated-login.md` |
 | SAML-002 | Core | SAML-001 | Planned | `part-saml/SAML-002-reading-and-validating-the-assertion.md` |
 | SAML-003 | Core | SAML-002 | Planned | `part-saml/SAML-003-integration-contract.md` |

@@ -44,9 +44,15 @@ FND-002 uses the same successful SAML deployment while omitting the authenticati
 
 `https://idp.example.net/status` is a separate fictional public-status endpoint used only to contrast a backend network request with browser traffic. It is not a SAML step or an asserted Okta capability.
 
+## Artifact-foundation comparisons
+
+FND-003 introduces a business API as a separate report-data service, with the portal backend as its caller. No API URL or token issuer identifier has been allocated yet. The API extension does not change the SAML pilot login. Maya is the resource owner in the delegated-access comparison.
+
+Its OIDC example is an alternative portal deployment, not a second login after SAML. The fictional failure deliberately selects the ID token for an API call; correcting the selection must retain API validation and report permissions. Tokens remain on the backend in this selected example.
+
 ## Future participants and deployments
 
-The SaaS application, business API, native client, scheduled service, and partner are approved future roles. Allocate their URLs and relationships when their first lesson is written, then record them here.
+The SaaS application, native client, scheduled service, and partner are approved future roles. The business API role is introduced above. Allocate their URLs and relationships when their first lesson is written, then record them here.
 
 The OIDC portal will be a clearly labeled alternative deployment. Do not imply SAML and OIDC are both required for one login. A later mixed-enterprise case may place them in different applications explicitly.
 

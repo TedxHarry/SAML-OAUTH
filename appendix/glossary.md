@@ -28,6 +28,18 @@ This reference grows as lessons introduce terms. Use the linked teaching home fo
 | Service provider (SP) | The application requesting and consuming an authentication result in the SAML example | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Session | State through which an application recognizes an ongoing interaction across requests | Applications | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
 | Single sign-on (SSO) | An experience in which an existing authentication can satisfy another application interaction without repeated interactive authentication, subject to policy | Federation | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
+| Access token | Credential presented for protected-resource access; acceptance and permission checks still apply | OAuth | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Authorization code | Short-lived, single-use value the client redeems at the authorization server token endpoint | OAuth code flow | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Authorization server | Service issuing tokens under the access arrangement | OAuth | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Client | Application seeking access to a protected resource | OAuth | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Consumer | Component interpreting or validating an artifact for its intended use | Exchange roles | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| ID token | Authentication result issued to an OIDC client; not the business API access credential | OIDC | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| JSON Web Token (JWT) | A format for representing claims; its format alone does not establish trust or purpose | Token formats | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Opaque value | Value whose contents the holding component treats as uninterpreted data | Artifact handling | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| OpenID Connect (OIDC) | Authentication layer on OAuth 2.0 | Login | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| OpenID Provider / Relying Party | Issuer of the OIDC authentication result / client relying on that result | OIDC roles | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Refresh token | Optional credential used with the authorization server to request new access tokens | OAuth | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
+| Resource server | Service exposing the protected resource, such as Acme business API | OAuth | [FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) |
 
 ## Entry conventions
 

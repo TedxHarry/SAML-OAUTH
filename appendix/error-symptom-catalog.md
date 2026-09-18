@@ -45,7 +45,21 @@ This reference supports worked troubleshooting lessons. A message or error code 
 
 ## OAuth and OpenID Connect
 
-Entries will be added from their worked investigations. Keep standardized codes separate from provider messages and visible symptoms.
+### Portal login works, but the API receives an ID token
+
+- **Classification:** Wrong credential selection in a fictional application, not a universal error string.
+- **Stage:** Portal backend selects a credential for the business API request in the alternative OIDC deployment.
+- **Standard error code:** None asserted by the supplied observations.
+- **Observed symptom:** Active portal session, unsuccessful report-data request.
+- **Possible causes before inspection:** Wrong token purpose, a token for another API, expiry, or insufficient permission.
+- **Distinguishing evidence:** The portal selected its ID-token field; the API contract requires an access token intended for that API.
+- **Next check:** Confirm the authorization arrangement supplies the appropriate access token, then correct credential selection without weakening API checks.
+- **Verification:** The permitted report succeeds; the ID token remains rejected and a disallowed report remains denied.
+- **Not established:** A generic API failure alone does not prove this cause. Successful portal login does not prove API authorization.
+- **Worked lesson:** [FND-003 investigation](../part-foundations/FND-003-artifact-creators-and-consumers.md#investigate-the-wrong-value).
+- **Sources:** [OpenID Connect Core, section 2](https://openid.net/specs/openid-connect-core-1_0.html#IDToken), [RFC 6750](https://www.rfc-editor.org/rfc/rfc6750.html); checked 2026-09-18. The deployment and observations are fictional.
+
+Further entries will be added from the protocol investigations. Keep standardized codes separate from provider messages and visible symptoms.
 
 ## Token lifecycle and browser behavior
 

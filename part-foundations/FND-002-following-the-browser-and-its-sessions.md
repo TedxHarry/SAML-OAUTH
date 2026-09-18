@@ -5,7 +5,7 @@
 **Prerequisites:** [FND-001](FND-001-login-access-and-account-lifecycle.md).\
 **Outcome:** Follow requests across browser and server boundaries, explain how separate sessions are remembered, and distinguish visible traffic from internal processing.
 
-> **Draft for review.** Requests, cookies, and observations are fictional. Message contents and some headers are deliberately omitted. These excerpts are not a deployable login implementation.
+> **Ready.** Reviewed on 2026-09-18. Requests, cookies, and observations are fictional. Message contents and some headers are deliberately omitted. These excerpts are not a deployable login implementation.
 
 ## One click, several requests
 
@@ -199,7 +199,7 @@ After correcting the supported cause, start a fresh login and verify that the po
 
 HTTP, cookie, and form references were checked on 2026-09-18. The selected login is the same fictional deployment as SAML-001, simplified to teach message delivery. The HTTP excerpts omit authentication fields and cookie settings and are not executable test artifacts.
 
-Diagram source checks are separate from host rendering. GitHub rendering still requires verification before this draft is marked Ready.
+The GitHub-rendered sequence diagram was visually checked on 2026-09-18. Its browser hops, internal notes, and response order agree with the walkthrough. The lesson review found no blocking prerequisite, narrative, or assessment issue.
 
 [Previous: FND-001](FND-001-login-access-and-account-lifecycle.md) | [Part 1](README.md) | [Table of contents](../TABLE-OF-CONTENTS.md)\
-**Next:** FND-003, Who creates each artifact, and who consumes it? (Planned).
+[Next: FND-003](FND-003-artifact-creators-and-consumers.md)

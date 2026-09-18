@@ -6,7 +6,9 @@ This is an authoring record, not the learner's navigation. Use the [table of con
 
 On 2026-09-18, FND-001 was reviewed for narrative-first structure, authentication/account/authorization separation, source notes, fictional-example consistency, and an assessment answerable from its own teaching. No additional prerequisite or content blocker was found. Module A of Foundations is reviewed; FND-001 is Ready.
 
-FND-002 is drafted. It introduces browser requests and separate sessions before protocol fields, uses the pilot deployment consistently, and includes a bounded direct-server-call contrast. Diagram source checking is not a GitHub-rendering claim. FND-002 remains Draft.
+FND-002 was reviewed on 2026-09-18 for message delivery, separate sessions, evidence limits, and prerequisite discipline. Its sequence diagram was visually inspected on GitHub and agrees with the walkthrough. FND-002 is Ready.
+
+FND-003 is drafted with issuer/carrier/consumer distinctions, separate SAML and OIDC deployments, an API extension, and a wrong-credential investigation. The Foundations readiness assessment now covers all three lessons. Module B review and FND-003 publication review remain pending; SAML-001 remains Draft.
 
 ## Structural baseline
 

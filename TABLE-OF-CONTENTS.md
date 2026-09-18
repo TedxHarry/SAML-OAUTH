@@ -5,7 +5,7 @@ Read Core lessons in the order shown. Optional lessons do not supply prerequisit
 **Depth:** Core | Advanced engineering | Specialist reference\
 **Status:** Planned | Draft | Ready
 
-Only existing lesson files are linked. FND-001 is Ready; FND-002 and SAML-001 are Draft. A Draft is available for review but has not yet passed every publication check. The other 61 titles reserve the approved curriculum without empty lesson files.
+Only existing lesson files are linked. FND-001 and FND-002 are Ready; FND-003 and SAML-001 are Draft. A Draft is available for review but has not yet passed every publication check. The other 60 titles reserve the approved curriculum without empty lesson files.
 
 ## Part 1: Foundations
 
@@ -16,10 +16,10 @@ Only existing lesson files are linked. FND-001 is Ready; FND-002 and SAML-001 ar
 
 ### Following the exchange
 
-- **[FND-002 - Following the browser and its sessions](part-foundations/FND-002-following-the-browser-and-its-sessions.md)** · Core · Draft\
+- **[FND-002 - Following the browser and its sessions](part-foundations/FND-002-following-the-browser-and-its-sessions.md)** · Core · Ready\
   Follow redirects, form posts, cookies, and separate server sessions.
 
-- **FND-003 - Who creates each artifact, and who consumes it?** · Core · Planned\
+- **[FND-003 - Who creates each artifact, and who consumes it?](part-foundations/FND-003-artifact-creators-and-consumers.md)** · Core · Draft\
   Distinguish assertions, codes, tokens, and cookies by purpose and consumer.
 
 ## Part 2: SAML

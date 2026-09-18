@@ -76,12 +76,13 @@ These references grow alongside the lessons.
 
 The approved structure contains 64 entries: 56 Core, 6 Advanced engineering, and 2 Specialist reference. It includes 55 teaching lessons and nine integrated cases.
 
-Three lessons are available:
+Four lessons are available:
 
 - [FND-001: Login, access, and account lifecycle](part-foundations/FND-001-login-access-and-account-lifecycle.md) · Ready
-- [FND-002: Following the browser and its sessions](part-foundations/FND-002-following-the-browser-and-its-sessions.md) · Draft
+- [FND-002: Following the browser and its sessions](part-foundations/FND-002-following-the-browser-and-its-sessions.md) · Ready
+- [FND-003: Who creates each artifact, and who consumes it?](part-foundations/FND-003-artifact-creators-and-consumers.md) · Draft
 - [SAML-001: The first complete SP-initiated login](part-saml/SAML-001-first-sp-initiated-login.md) · Draft, the reviewed pilot
 
-The other 61 lessons are Planned, not yet written. The table of contents distinguishes **Planned**, **Draft**, and **Ready** material. No lesson is labeled Ready merely because its file exists.
+The other 60 lessons are Planned, not yet written. The table of contents distinguishes **Planned**, **Draft**, and **Ready** material. No lesson is labeled Ready merely because its file exists.
 
 For authoring conventions, see the [writing guide](WRITING-GUIDE.md). Structural coverage is tracked in the [coverage map](authoring/coverage-map.md), with paths and prerequisites in the [lesson register](authoring/lesson-register.md). Actual changes are recorded in the [changelog](CHANGELOG.md).

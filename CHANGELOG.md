@@ -2,6 +2,13 @@
 
 ## 2026-09-18
 
+### Artifact foundations and browser-lesson review
+
+- Reviewed FND-002 and visually verified its diagram on GitHub; marked it Ready.
+- Added FND-003 as a Draft comparing artifact issuers, carriers, consumers, and purposes, with a worked API credential investigation.
+- Added the Foundations cumulative readiness assessment and worked reasoning; module review remains pending.
+- Updated navigation, glossary, scenario, and coverage records. There are now 2 Ready, 2 Draft, and 60 Planned lessons.
+
 ### Foundations continuation
 
 - Reviewed FND-001 against its purpose, prerequisites, source notes, examples, and assessment; marked it Ready. This completes the review of the first Foundations module.
@@ -18,4 +25,4 @@
 - Added the writing guide, Acme reference, coverage map, and initial supporting references.
 - Left 62 unwritten lessons marked Planned, without empty lesson files or broken links.
 
-At initial scaffold publication neither draft was marked Ready. Subsequent status changes are recorded above. The SAML pilot still has an unwritten prerequisite; publication review remains separate from making a draft available.
+At initial scaffold publication neither draft was marked Ready. Subsequent status changes are recorded above. All Foundations prerequisites are now available; publication review remains separate from making a draft available.
