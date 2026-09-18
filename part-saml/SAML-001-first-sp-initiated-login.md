@@ -49,7 +49,7 @@ In this scenario, her existing session is sufficient. She does not need to enter
 
 The IdP prepares a successful SAML response containing an **assertion**, a structured statement about Maya's authentication. It identifies the employee and restricts where and when the statement can be accepted.
 
-The IdP signs the assertion. The portal will use an already-trusted public key to check that signature when the response arrives.
+The IdP signs the assertion using a private key that it keeps secret. A corresponding public key lets the portal check the signature without obtaining that private key. With the correct trust configuration, this check establishes the signed content's origin and integrity: whether it verifies under the expected key and has remained unchanged. Signing does not hide the assertion's contents. The portal will still need to check whether this particular assertion is acceptable for this login. [W3C XML Signature, introduction and security considerations](https://www.w3.org/TR/xmldsig-core1/)
 
 But the IdP does not make a direct network call to the portal here. It returns a page containing a form to Maya's browser. The browser submits that form to the portal, carrying the response.
 
@@ -72,7 +72,7 @@ sequenceDiagram
     participant IDP as Acme identity provider
 
     B->>SP: GET /reports
-    Note over SP: No portal session; store pending login
+    Note over SP: No portal session - store pending login
     SP-->>B: 302 redirect with SAMLRequest and RelayState
     B->>IDP: GET /sso with request and IdP cookie
     Note over IDP: Check request and existing IdP session
@@ -81,7 +81,7 @@ sequenceDiagram
     B->>SP: POST /saml/acs with response and RelayState
     Note over SP: Validate response and exact signed assertion
     Note over SP: Match account and establish portal session
-    SP-->>B: Set portal cookie; 303 redirect to /reports
+    SP-->>B: Set portal cookie and 303 redirect to /reports
     B->>SP: GET /reports with portal cookie
     Note over SP: Check session and report permission
     SP-->>B: 200 report page
@@ -131,9 +131,11 @@ HTTP/1.1 302 Found
 Location: https://idp.example.net/sso?SAMLRequest=ENCODED_REQUEST&RelayState=OPAQUE_HANDLE
 ```
 
-The browser follows the `Location` address. `SAMLRequest` contains the XML request, compressed using DEFLATE, Base64-encoded, and URL-encoded.
+The browser follows the `Location` address. `SAMLRequest` contains the XML request, compressed using DEFLATE, Base64-encoded, and URL-encoded. Compression reduces its size; Base64 represents bytes as text; URL encoding makes the value suitable for a URL parameter. None of those operations encrypts the request.
 
 Acme uses `RelayState` as an unpredictable handle to its stored login context, including the approved return path. It does not accept an arbitrary return URL from the browser. The request ID and returned `InResponseTo` values provide protocol-level request correlation; RelayState does not replace those checks.
+
+The request uses **XML**, a structured text format. Tags name elements, and attributes inside a start tag supply named values. In the excerpt, `ID="_req_701"` is an attribute; the text between the `Issuer` tags is that element's content. The `xmlns` declarations associate prefixes such as `samlp` with namespaces, keeping protocol names distinct. You do not need to memorize the namespace strings to follow the request. [W3C XML, section 3](https://www.w3.org/TR/xml/#sec-logical-struct)
 
 Before encoding, the request contains fields like these:
 
@@ -165,7 +167,7 @@ Content-Type: application/x-www-form-urlencoded
 SAMLResponse=ENCODED_RESPONSE&RelayState=OPAQUE_HANDLE
 ```
 
-Acme's implementation uses a separate, short-lived correlation cookie for this return. Because it is a cross-site form POST, Acme chooses `SameSite=None; Secure; HttpOnly` for that cookie. `SameSite=None` permits cross-site delivery, subject to browser policy; `Secure` restricts delivery to HTTPS; `HttpOnly` prevents ordinary page JavaScript from reading it.
+Acme's implementation uses a separate, short-lived correlation cookie for this return. The IdP at `idp.example.net` and portal at `portal.example.com` are on different sites, so this returning form POST is cross-site. Acme chooses `SameSite=None; Secure; HttpOnly` for that cookie. `SameSite=None` permits cross-site delivery, subject to browser policy; `Secure` restricts delivery to HTTPS; `HttpOnly` prevents ordinary page JavaScript from reading it. These attributes have different jobs: blocking script access does not prevent the browser from sending the cookie. [MDN Set-Cookie reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)
 
 These are application choices, not a session design prescribed by SAML. The temporary cookie is not an authenticated portal session. [OWASP session management guidance](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
 
@@ -263,4 +265,4 @@ Protocol references were checked on September 17, 2026 against the cited OASIS s
 The fictional times, identifiers, and destinations are internally consistent. The excerpts omit a complete signed response and cryptographic material, so they are not executable or cryptographically verified artifacts. GitHub rendering of the Mermaid diagram still requires verification before this draft is marked Ready.
 
 [Part 2](README.md) | [Table of contents](../TABLE-OF-CONTENTS.md)\
-**Previous in Core order:** FND-003 (Planned). **Next:** SAML-002 (Planned).
+[Previous: FND-003](../part-foundations/FND-003-artifact-creators-and-consumers.md) | **Next:** SAML-002 (Planned).
