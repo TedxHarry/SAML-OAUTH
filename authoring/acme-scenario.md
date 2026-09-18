@@ -38,6 +38,12 @@ The temporary browser correlation cookie and authenticated portal cookie serve d
 
 FND-001 first presents Maya's intended, working account and report access. It then deliberately varies the example by removing her local mapping or report permission. Those are hypothetical failure cases, not changes to the pilot's baseline.
 
+## Browser-foundation illustration
+
+FND-002 uses the same successful SAML deployment while omitting the authentication message fields and cookie attributes to explain delivery first. `FICTIONAL_IDP_HANDLE` and `FICTIONAL_PORTAL_HANDLE` are non-working labels for distinct host-only session cookies. The report and receiving endpoints remain unchanged.
+
+`https://idp.example.net/status` is a separate fictional public-status endpoint used only to contrast a backend network request with browser traffic. It is not a SAML step or an asserted Okta capability.
+
 ## Future participants and deployments
 
 The SaaS application, business API, native client, scheduled service, and partner are approved future roles. Allocate their URLs and relationships when their first lesson is written, then record them here.

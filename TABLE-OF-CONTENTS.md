@@ -5,18 +5,18 @@ Read Core lessons in the order shown. Optional lessons do not supply prerequisit
 **Depth:** Core | Advanced engineering | Specialist reference\
 **Status:** Planned | Draft | Ready
 
-Only lessons with actual draft files are linked. A Draft is available for review; it has not yet passed every publication check. The other 62 titles reserve the approved curriculum without empty lesson files.
+Only existing lesson files are linked. FND-001 is Ready; FND-002 and SAML-001 are Draft. A Draft is available for review but has not yet passed every publication check. The other 61 titles reserve the approved curriculum without empty lesson files.
 
 ## Part 1: Foundations
 
 ### Understanding the login problem
 
-- **[FND-001 - Login, access, and account lifecycle](part-foundations/FND-001-login-access-and-account-lifecycle.md)** · Core · Draft\
+- **[FND-001 - Login, access, and account lifecycle](part-foundations/FND-001-login-access-and-account-lifecycle.md)** · Core · Ready\
   Distinguish identity, permission, account maintenance, federation, and SSO.
 
 ### Following the exchange
 
-- **FND-002 - Following the browser and its sessions** · Core · Planned\
+- **[FND-002 - Following the browser and its sessions](part-foundations/FND-002-following-the-browser-and-its-sessions.md)** · Core · Draft\
   Follow redirects, form posts, cookies, and separate server sessions.
 
 - **FND-003 - Who creates each artifact, and who consumes it?** · Core · Planned\

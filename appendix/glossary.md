@@ -1,6 +1,6 @@
 # Glossary
 
-This reference grows as lessons introduce terms. Use the linked teaching home for the explanation and worked example. Entries below support the two current drafts; they do not replace them.
+This reference grows as lessons introduce terms. Use the linked teaching home for the explanation and worked example. Entries support the currently available lessons; they do not replace them.
 
 | Term | Plain-language meaning | Context | Teaching home |
 |---|---|---|---|
@@ -9,14 +9,21 @@ This reference grows as lessons introduce terms. Use the linked teaching home fo
 | Audience | The intended relying party identified in the assertion's restrictions | SAML pilot | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Authentication | Establishing the account identity for an interaction using required evidence | Identity | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
 | Authorization | Deciding whether a caller may perform an action on a resource | Application/API policy | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
+| Back channel | A direct exchange between server runtimes rather than delivery through the user's browser | Message delivery | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
 | Bearer assertion | An assertion presented without proving possession of a separate cryptographic key; all applicable acceptance checks still apply | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Binding | Rules for transporting protocol messages | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
+| Cookie | Browser-held name/value data returned on eligible requests; this course's session cookies identify separate server-side sessions | HTTP | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
+| Endpoint | An address at which a service receives a particular kind of request | HTTP services | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
 | Entity ID | An identifier for a SAML participant, not necessarily a browser endpoint | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Federation | An arrangement in which an application relies on an identity provider's verified authentication result | Identity | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
+| Front channel | Message delivery through the user's browser | Message delivery | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
+| Header | A named field carrying information about an HTTP request or response | HTTP | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
 | Identity provider (IdP) | The participant that establishes identity and supplies the authentication result in the course's login example | Federation | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
+| Internal processing | Work within a component, such as validating a message or looking up a session, distinguished from a network message to another participant | Diagram convention | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
 | NameID | A SAML subject identifier; the pilot uses an agreed persistent value within the trusted IdP relationship | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Profile | Rules combining protocol mechanisms for a particular use, such as browser SSO | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Provisioning | Creating and maintaining the account and access-related data an application needs | Account lifecycle | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |
+| Redirect | A response directing the client to another location; following it creates a new request | HTTP | [FND-002](../part-foundations/FND-002-following-the-browser-and-its-sessions.md) |
 | RelayState | A value carried through a SAML round trip; Acme uses an opaque handle to stored login context | SAML pilot | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Service provider (SP) | The application requesting and consuming an authentication result in the SAML example | SAML | [SAML-001](../part-saml/SAML-001-first-sp-initiated-login.md) |
 | Session | State through which an application recognizes an ongoing interaction across requests | Applications | [FND-001](../part-foundations/FND-001-login-access-and-account-lifecycle.md) |

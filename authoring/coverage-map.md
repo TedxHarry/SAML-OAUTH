@@ -2,6 +2,12 @@
 
 This is an authoring record, not the learner's navigation. Use the [table of contents](../TABLE-OF-CONTENTS.md) to read the course and the [lesson register](lesson-register.md) for all reserved paths and direct prerequisites.
 
+## Published-material review
+
+On 2026-09-18, FND-001 was reviewed for narrative-first structure, authentication/account/authorization separation, source notes, fictional-example consistency, and an assessment answerable from its own teaching. No additional prerequisite or content blocker was found. Module A of Foundations is reviewed; FND-001 is Ready.
+
+FND-002 is drafted. It introduces browser requests and separate sessions before protocol fields, uses the pilot deployment consistently, and includes a bounded direct-server-call contrast. Diagram source checking is not a GitHub-rendering claim. FND-002 remains Draft.
+
 ## Structural baseline
 
 The approved plan has 64 entries: 56 Core, 6 Advanced engineering, and 2 Specialist reference. There are 55 teaching lessons and nine cases. The initial register contains 245 prerequisite links. Its reading order has no missing/later prerequisite, duplicate ID, or Core dependency on optional material.

@@ -49,7 +49,19 @@ Entries will be added from their worked investigations. Keep standardized codes 
 
 ## Token lifecycle and browser behavior
 
-Entries will be added from the token and architecture investigations.
+### Browser returns to sign-in after posting the authentication result
+
+- **Classification:** Observed redirect-loop symptom, not a standard protocol error.
+- **Stage:** Browser return and subsequent portal-session use.
+- **Standard error code:** None established by the trace.
+- **Possible causes:** Rejected authentication result, absent or ineligible cookie, missing session creation, or failed server-side session lookup.
+- **Distinguishing evidence:** Whether the response set a cookie, whether the next eligible request sent it, and the portal's validation/session events.
+- **Next check:** Follow the cookie across response and request, then correlate the relevant portal decisions.
+- **Not established:** The redirect alone does not prove a signature failure; a cookie header alone does not prove a live server session.
+- **Worked lesson:** [FND-002 exercise](../part-foundations/FND-002-following-the-browser-and-its-sessions.md#predict-the-next-check). Later SAML-008 and ARCH-002 add deeper investigations.
+- **Sources:** [RFC 6265](https://www.rfc-editor.org/rfc/rfc6265.html), [OWASP session management](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html); checked 2026-09-18. The diagnostic scenario is fictional.
+
+Further entries will be added from the token and architecture investigations.
 
 ## Entry structure
 

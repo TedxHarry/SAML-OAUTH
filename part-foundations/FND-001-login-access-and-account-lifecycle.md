@@ -5,7 +5,7 @@
 **Prerequisites:** Existing IT fundamentals; no earlier course lesson.\
 **Outcome:** Distinguish establishing identity, granting access, and maintaining accounts, then identify which decision needs investigation when access fails.
 
-> **Draft for review.** All people, account records, and diagnostic observations in this lesson are fictional.
+> **Ready.** Reviewed against the course definition of done on 2026-09-18. All people, account records, and diagnostic observations are fictional.
 
 ## Maya wants to read her report
 
@@ -63,7 +63,7 @@ The policy in this example is Acme's application policy. It is not a universal p
 
 ## Why Maya does not sign in for every page
 
-After the portal establishes the authenticated interaction, it maintains a **session**. That lets it recognize subsequent requests without repeating the full sign-in process on every page. FND-002 will explain the browser cookie and server-side record involved.
+After the portal establishes the authenticated interaction, it maintains a **session**. That lets it recognize subsequent requests without repeating the full sign-in process on every page. [FND-002](FND-002-following-the-browser-and-its-sessions.md) explains the browser cookie and server-side record involved.
 
 The portal's session is separate from any session at the identity provider.
 
@@ -145,4 +145,4 @@ If only the first observation were available, you could not yet claim that the p
 Source documents for the introductory distinctions were checked on 2026-09-18. The Acme records, policy, and diagnostic observations are fictional teaching choices. This lesson has no executable protocol artifact and does not claim that one product setting controls every account, session, or permission.
 
 [Part 1](README.md) | [Table of contents](../TABLE-OF-CONTENTS.md)\
-**Next:** FND-002, Following the browser and its sessions (Planned).
+**Next:** [FND-002, Following the browser and its sessions](FND-002-following-the-browser-and-its-sessions.md).
